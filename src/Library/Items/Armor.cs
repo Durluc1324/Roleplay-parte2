@@ -1,6 +1,6 @@
 namespace Ucu.Poo.RoleplayGame;
 
-public class Armor
+public class Armor : IDefense
 {
     public int DefenseValue
     {
