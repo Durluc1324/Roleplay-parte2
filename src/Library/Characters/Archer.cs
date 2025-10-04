@@ -1,6 +1,6 @@
 namespace Ucu.Poo.RoleplayGame;
 
-public class Archer
+public class Archer : ICharacter
 {
     private int health = 100;
 
@@ -16,7 +16,7 @@ public class Archer
     public Helmet Helmet { get; set; }
 
     public int AttackValue
-    {
+    {   
         get
         {
             return Bow.AttackValue;
@@ -37,7 +37,7 @@ public class Archer
         {
             return this.health;
         }
-        private set
+         set
         {
             this.health = value < 0 ? 0 : value;
         }
