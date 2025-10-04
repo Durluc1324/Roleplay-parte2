@@ -1,6 +1,6 @@
 namespace Ucu.Poo.RoleplayGame;
 
-public class Wizard
+public class Wizard: ICharacter
 {
     private int health = 100;
 
@@ -37,7 +37,7 @@ public class Wizard
         {
             return this.health;
         }
-        private set
+        set
         {
             this.health = value < 0 ? 0 : value;
         }
